@@ -16,3 +16,17 @@ const config = {
 };
 
 export default config;
+
+export default {
+  kit: {
+    // other configurations
+    handleHttpError: ({ request, resolve, response }) => {
+      if (request.path === '/task-manager') {
+        response.writeHead(404, { 'Content-Type': 'application/json' });
+        response.end(JSON.stringify({ message: 'Custom 404 Not Found' }));
+      } else {
+        resolve(request);
+      }
+    }
+  }
+};
