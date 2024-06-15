@@ -12,7 +12,7 @@
             <li><a href="/about" on:click|preventDefault={() => goto('/about')}>About</a></li>
             <li><a href="/tasks" on:click|preventDefault={() => goto('/tasks')}>Task Manager</a></li>
             <li><a href="/tasksStore" on:click|preventDefault={() => goto('/tasksStore')}>Task Store</a></li>
-            <li><a href="/register" on:click|preventDefault={() => goto('/register')}>Register</a></li>
+         <!--   <li><a href="/register" on:click|preventDefault={() => goto('/register')}>Register</a></li>-->
         </ul>
     </nav>
 </header>
